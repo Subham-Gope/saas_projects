@@ -1,1 +1,60 @@
+// SCSS Variables
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 $main-color: #cbdeff;
+$bg-image-center: no-repeat center center/ cover;
+$mainFont: "Roboto", sans-serif;
+
+body {
+  background: linear-gradient(#a5aae9cc, #8c9af6);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: $mainFont;
+}
+.card {
+  background: $main-color;
+  max-width: 280px;
+  padding: 20px;
+  line-height: 24px;
+  margin: 4rem;
+  position: relative;
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  right: -30px;
+  bottom: 110px;
+}
+
+.img-one {
+  background: url("Images/one.jpg") $bg-image-center;
+}
+
+.img-two {
+  background: url("Images/two.jpg") $bg-image-center;
+}
+
+.img-three {
+  background: url("Images/three.jpg") $bg-image-center;
+}
+.img-four {
+  background: url("Images/four.jpg") $bg-image-center;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Nesting
