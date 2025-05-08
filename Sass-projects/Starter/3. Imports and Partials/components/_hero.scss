@@ -1,0 +1,37 @@
+// Hero
+
+main {
+  .content-container {
+    height: 100vh;
+    margin-top: 5rem;
+    background: url("https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+      center center/cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 4rem;
+    gap: 1.6rem;
+
+    h1 {
+      font-size: 4rem;
+      font-family: "Fascinate", sans-serif;
+      color: white;
+    }
+    p {
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      color: white;
+    }
+    .cta {
+      padding: 1rem 4rem;
+      background: rgb(25, 125, 255);
+      color: white;
+      font-family: "Fascinte", sans-serif;
+      border-radius: 1rem 0;
+      border: 4px solid orange;
+      filter: drop-shadow(4px 4px 8px rgba(255, 255, 255, 0.5));
+    }
+  }
+}

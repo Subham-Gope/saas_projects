@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 10px;
-}
-
 nav {
   display: flex;
   width: 100%;
@@ -153,6 +149,10 @@ main .content-container .cta {
 .gallery .gallery-img {
   width: 300px;
   margin: 20px;
+}
+
+:root {
+  font-size: 10px;
 }
 
 footer {
