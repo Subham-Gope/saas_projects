@@ -78,7 +78,7 @@ main .content-container .cta {
 
 .card-section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -91,6 +91,8 @@ main .content-container .cta {
   top: 1rem;
   font-size: 4rem;
   font-family: "Fascinate", sans-serif;
+  text-align: center;
+  width: 100%;
 }
 .card-section .card {
   display: flex;
@@ -151,10 +153,6 @@ main .content-container .cta {
   margin: 20px;
 }
 
-:root {
-  font-size: 10px;
-}
-
 footer {
   height: 100vh;
   display: flex;
@@ -186,4 +184,8 @@ footer form button {
   padding: 1rem 2rem;
   font-family: sans-serif;
   display: block;
+}
+
+:root {
+  font-size: 10px;
 }/*# sourceMappingURL=styles.css.map */

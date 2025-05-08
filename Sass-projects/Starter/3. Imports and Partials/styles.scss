@@ -6,45 +6,9 @@
 @import "./components/hero";
 @import "./components/background_section";
 @import "./components/gallery";
+@import "./components/footer";
 ////////////////////////////////////
 
-:root {
+:root  {
   font-size: 10px;
-}
-
-// Footer
-
-footer {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: flex-start;
-    input {
-      padding: 1rem 2rem;
-      margin-bottom: 2rem;
-    }
-    textarea {
-      padding: 2rem;
-      width: 42rem;
-      height: 20rem;
-      margin-bottom: 2rem;
-    }
-
-    button {
-      text-decoration: none;
-      color: #fff;
-      background: #000;
-      padding: 1rem 2rem;
-      font-family: sans-serif;
-      display: block;
-    }
-  }
 }
