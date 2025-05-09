@@ -1,0 +1,53 @@
+.selector {
+  // Math functions
+  //   padding: max(10px, 50px, 20px, 60px, 2px);
+  //   padding: min(10px, 50px, 20px, 60px, 2px);
+  //   padding: random();
+  //   padding: random(10);
+  //   padding: unit(20em);
+  //   padding: unit(30px);
+  //   padding: unit(55rem);
+  //   padding: unitless(20px);
+  //   padding: unitless(40);
+}
+
+.selector {
+  // String Functions
+
+  font-family: quote(robot);
+  font-family: quote(arial);
+  font-family: unquote("arial");
+  font-family: to-upper-case("subham");
+  font-family: to-lower-case("SUBHAM");
+  font-family: str-length("subhamgope");
+  padding: str-index("subhamgope", "u");
+  padding: str-index("Hello", "e");
+  font-family: str-insert("sbhamgope", "u", 2);
+  border: unique-id();
+}
+
+// // Color functions
+// $initial-color: blue;
+
+// .container {
+//   width: 600px;
+//   height: 100px;
+//   background: darken($initial-color, 30);
+//   background: lighten($initial-color, 30);
+//   background: adjust-hue($initial-color, 20);
+//   background: saturate($initial-color, 80);
+//   background: mix($initial-color, teal, 50);
+// }
+
+// Saas List
+$list: 20px 10px 130px;
+
+.slector {
+  padding: length($list);
+  padding: nth($list, 2);
+  padding: set-nth($list, 3, 2em);
+  padding: join((20px, 10px, 30px), (40px, 50px, 60px), comma);
+  padding: join((20px, 10px, 30px), (40px, 50px, 60px), space);
+  padding: append($list, 40px);
+  padding: append($list, (40px+60px));
+}
