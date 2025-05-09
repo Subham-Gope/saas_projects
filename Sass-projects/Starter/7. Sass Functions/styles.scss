@@ -1,30 +1,30 @@
-.selector {
-  // Math functions
-  //   padding: max(10px, 50px, 20px, 60px, 2px);
-  //   padding: min(10px, 50px, 20px, 60px, 2px);
-  //   padding: random();
-  //   padding: random(10);
-  //   padding: unit(20em);
-  //   padding: unit(30px);
-  //   padding: unit(55rem);
-  //   padding: unitless(20px);
-  //   padding: unitless(40);
-}
+// .selector {
+//   // Math functions
+//   //   padding: max(10px, 50px, 20px, 60px, 2px);
+//   //   padding: min(10px, 50px, 20px, 60px, 2px);
+//   //   padding: random();
+//   //   padding: random(10);
+//   //   padding: unit(20em);
+//   //   padding: unit(30px);
+//   //   padding: unit(55rem);
+//   //   padding: unitless(20px);
+//   //   padding: unitless(40);
+// }
 
-.selector {
-  // String Functions
+// .selector {
+//   // String Functions
 
-  font-family: quote(robot);
-  font-family: quote(arial);
-  font-family: unquote("arial");
-  font-family: to-upper-case("subham");
-  font-family: to-lower-case("SUBHAM");
-  font-family: str-length("subhamgope");
-  padding: str-index("subhamgope", "u");
-  padding: str-index("Hello", "e");
-  font-family: str-insert("sbhamgope", "u", 2);
-  border: unique-id();
-}
+//   font-family: quote(robot);
+//   font-family: quote(arial);
+//   font-family: unquote("arial");
+//   font-family: to-upper-case("subham");
+//   font-family: to-lower-case("SUBHAM");
+//   font-family: str-length("subhamgope");
+//   padding: str-index("subhamgope", "u");
+//   padding: str-index("Hello", "e");
+//   font-family: str-insert("sbhamgope", "u", 2);
+//   border: unique-id();
+// }
 
 // // Color functions
 // $initial-color: blue;
@@ -39,15 +39,56 @@
 //   background: mix($initial-color, teal, 50);
 // }
 
-// Saas List
-$list: 20px 10px 130px;
+// // Saas List
+// $list: 20px 10px 130px;
 
-.slector {
-  padding: length($list);
-  padding: nth($list, 2);
-  padding: set-nth($list, 3, 2em);
-  padding: join((20px, 10px, 30px), (40px, 50px, 60px), comma);
-  padding: join((20px, 10px, 30px), (40px, 50px, 60px), space);
-  padding: append($list, 40px);
-  padding: append($list, (40px+60px));
-}
+// .selector {
+//   padding: length($list);
+//   padding: nth($list, 2);
+//   padding: set-nth($list, 3, 2em);
+//   padding: join((20px, 10px, 30px), (40px, 50px, 60px), comma);
+//   padding: join((20px, 10px, 30px), (40px, 50px, 60px), space);
+//   padding: append($list, 40px);
+//   padding: append($list, (40px+60px));
+// }
+
+// Saas Map
+
+// $font-weights: (
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+// );
+
+// .selector {
+//   font-weight: map-get($font-weights, "medium");
+//   font-weight: map-keys($font-weights);
+//   font-weight: map-values($font-weights);
+//   font-weight: map-has-key($font-weights, "bold");
+//   padding: map-has-key($font-weights, "g");
+// }
+
+// Creating a Custom Functions
+
+// example 1
+// @function add($numberOne, $numberTwo) {
+//   @return $numberOne + $numberTwo;
+// }
+
+// .container {
+//   width: add(3, 4);
+// }
+
+// // example 2
+
+// @function randomColor() {
+//   @return rgb(random(255), random(255), random(255));
+// }
+
+// .container {
+//   width: 100px;
+//   height: 100px;
+//   background: randomColor();
+// }
+
+
