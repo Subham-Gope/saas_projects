@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 1.5rem 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.6rem;
+}
+
+header {
+  height: 50vh;
+  @extend .flex-center;
+  background: linear-gradient(rgba(0, 0, 0, 0.179), rgba(0, 0, 0, 0.65)),
+    url("https://images.pexels.com/photos/979310/pexels-photo-979310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+      no-repeat center center/cover;
+  color: white;
+
+  p {
+    margin-top: 2rem;
+    max-width: 50rem;
+    text-align: center;
+  }
+}
+
+.container {
+  height: 100vh;
+
+  .cards {
+    @extend .flex-center;
+    flex-direction: row;
+    .card {
+      border: 1px solid rgba(168, 168, 168, 1);
+      width: 50rem;
+      padding: 2rem;
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+
+    .card-img {
+      background-image: url("https://images.pexels.com/photos/18376959/pexels-photo-18376959/free-photo-of-sweet-moon-cookie.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 20rem;
+      margin-bottom: 2rem;
+    }
+
+    .img-two {
+      @extend .card-img;
+      background-image: url("https://images.pexels.com/photos/14853728/pexels-photo-14853728.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .img-three {
+      @extend .card-img;
+      background-image: url("https://images.pexels.com/photos/2613471/pexels-photo-2613471.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+    .img-four {
+      @extend .card-img;
+      background-image: url("https://images.pexels.com/photos/983587/pexels-photo-983587.jpeg?auto=compress&cs=tinysrgb&w=600");
+    }
+
+    p {
+      margin-bottom: 2rem;
+      max-width: 30rem;
+      line-height: 1.4;
+      color: rgb(96, 96, 96);
+      font-size: 1.6rem;
+    }
+    .card-title {
+      margin-bottom: 2rem;
+      color: rgba(28, 28, 28, 1);
+      font-size: 2.4rem;
+    }
+    .btn-primary {
+      @extend .btn;
+      background-color: rgb(0, 119, 255);
+    }
+
+    .btn-secondary {
+      @extend .btn;
+      background-color: orange;
+    }
+  }
+}
