@@ -1,0 +1,8 @@
+$index: 0;
+
+@while $index <= 10 {
+  .selector-#{$index} {
+    width: #{$index}px;
+  }
+  $index: $index + 1;
+}
