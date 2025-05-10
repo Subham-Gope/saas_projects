@@ -1,4 +1,21 @@
-$colors: green teal yellowgreen yellow;
+// @each loop example;
+// $fruitsColor: red, blue, yellow;
+
+// @each $color in $fruitsColor {
+//   .#{$color} {
+//     background: $color;
+//   }
+// }
+
+// $list: ((normal, bold, 10px), (bold, italic, 20px));
+
+// @each $name, $style, $size in $list {
+//   .#{$name} {
+//     font: $name $style $size;
+//   }
+// }
+
+$colors: yellow, crimson, orange, red;
 
 @each $color in $colors {
   .#{$color} {
@@ -11,6 +28,7 @@ body {
 }
 
 div {
+  // flex: flex-grow flex-shrink flex-basis
   flex: 1 1 auto;
   height: 100vh;
 }

@@ -70,16 +70,19 @@ $two: 4px;
 
 @function math($operator, $numberOne, $numberTwo) {
   @if $operator == "add" {
-    @return $numberOne + $numberTwo;
+    @return #{$numberOne + $numberTwo}px;
   }
   @if $operator == "substract" {
-    @return $numberOne - $numberTwo;
+    @return #{$numberOne - $numberTwo}px;
   }
   @if $operator == "multiply" {
-    @return $numberOne * $numberTwo;
+    @return #{$numberOne * $numberTwo}px;
   }
-  @if $operator == "division" {
-    @return $numberOne/$numberTwo;
+  @if $operator == "divide" {
+    @return #{$numberOne/$numberTwo}px;
+  }
+  @if $operator == "mod" {
+    @return #{$numberOne % $numberTwo}px;
   }
 }
 
@@ -87,7 +90,13 @@ section {
   background: teal;
 
   // add
-  width: math("add", 100px, 50px);
+  width: math("add", 100, 50);
   // substract
-  height: math("substract", 300px, 20px);
+  height: math("substract", 300, 20);
+  // mulitiply
+  padding: math("multiply", 2, 5);
+  // divide
+  margin: math("divide", 20, 4);
+  // mod
+  border: math("mod", 20, 20);
 }
